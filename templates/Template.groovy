@@ -43,12 +43,7 @@ class Template {
                 }
             }
             triggers {
-                githubPush {
-                    buildOnMergeRequestEvents("${config.buildOnMergeRequestEvents}".toBoolean())
-                    buildOnPushEvents("${config.buildOnPushEvents}".toBoolean())
-                    enableCiSkip(true)
-                    targetBranchRegex("**")
-                }
+                githubPush()
             }
         }
     }
