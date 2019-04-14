@@ -6,7 +6,7 @@ class Template {
     static defaultFileName = 'Jenkinsfile'
     static defaultIncludedBranches = ''
     static defaultExcludedBranches = ''
-    static hostNameGitHub = 'git@github.com:Backbase/recruitment-devops-engineer-assignment.git'
+    static hostNameGitHub = 'https://github.com/Backbase/recruitment-devops-engineer-assignment.git'
 
     static void createPipelineJobWithTriggers(job, Map params = [:]) {
         def config = createConfig(hostNameGitHub, job, params)
